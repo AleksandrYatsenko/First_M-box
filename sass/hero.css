@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  min-height: 825px;
+  background: url('../img/hero_bg.jpg') center center/cover no-repeat;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 16px;
+  color: #fff
+
+}
