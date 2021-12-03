@@ -1,0 +1,16 @@
+@import 'libs/fonts';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Mulish', sans-serif;
+}
+
+@import 'blocks/hero';
+@import 'blocks/shows';
+@import 'blocks/movies';
