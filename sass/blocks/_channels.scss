@@ -1,7 +1,8 @@
-.movies {
+.channels {
   width: 100%;
-  min-height: 464px;
-  padding: 0 80px;
+  min-height: 193px;
+  padding: 0 80px 0 80px;
+  margin-top: 70px;
   &__box {
     display: flex;
     align-items: center;
@@ -34,40 +35,18 @@
       transform: rotate(-45deg);
     }
   }
-  &__slider {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 55px;
-    img {
-      border-radius: 21px;
-    }
+    gap: 35px;
   }
-  &__link {
-    &_active {
-      img {
-        box-shadow: 0px 4px 30px -12px #26FFF2;
-      }
-    }
-  }
-  &__more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    height: 50px;
-    background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
-    border-radius: 100px;
+  &__item {
+    width: 260px;
+    height: 118px;
+    background-color: #fff;
+    border-radius: 20px;
     border: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 20px;
-    text-decoration: none;
-    &:hover {
-      box-shadow: 0px 6px 50px rgba(50, 108, 255, 0.6);
-    }
-    
   }
 }

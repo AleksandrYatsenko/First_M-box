@@ -11,6 +11,16 @@ body {
   font-family: 'Mulish', sans-serif;
 }
 
+.deco {
+  width: 8px;
+  height: 35px;
+  background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+  border: none;
+  border-radius: 50px;
+}
+
 @import 'blocks/hero';
 @import 'blocks/shows';
 @import 'blocks/movies';
+@import 'blocks/genres';
+@import 'blocks/channels';
