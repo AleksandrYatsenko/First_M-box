@@ -9,11 +9,11 @@
 .shows {
   width: 100%;
   min-height: 464px;
-  padding: 40px 80px;
+  padding: 40px 0;
   &__box {
     display: flex;
     align-items: center;
-    margin: 40px 0;
+    margin: 60px 0 40px;
     .deco {
       width: 8px;
       height: 35px;

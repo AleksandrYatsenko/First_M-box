@@ -16,19 +16,19 @@
           <img src="icons/logo.svg" alt="Mbox logo">
         </a>
       </div>
-      <nav class="header__nav">
+      <nav class="header__item">
         <ul class="header__nav">
           <li class="header__nav-item">
             <a href="#" class="header__link header__link_active">Home</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__link">TV Shows</a>
+            <a href="#TVshows" class="header__link">TV Shows</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__link">Movies</a>
+            <a href="#movies" class="header__link">Movies</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__link">Series</a>
+            <a href="#genres" class="header__link">Genres</a>
           </li>
         </ul>
       </nav>
@@ -52,236 +52,257 @@
         </ul>
       </div>
     </header>
-    <div class="hero__info">
-      <h1 class="hero__title">Night Watch</h1>
-      <div class="hero__filter">
-        <span class="year">2021</span>
-        <span class="age">18+</span>
-        <span class="season">9 Seasons</span>
-        <span class="rating">8.8</span>
-      </div>
-      <p class="hero__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo accusantium voluptatum, eaque nobis labore, iste blanditiis doloribus facere ab rem error laborum quo velit. Molestias ea ex tempora nesciunt placeat.</p>
-      <div class="hero__links">
-        <a href="#" class="hero__link"><img src="icons/play.svg" alt="play"><span>Watch</span>
-        </a>
-        <a href="#" class="hero__link">More information</a>
+    <div class="container">
+      <div class="hero__info">
+        <h1 class="hero__title">Night Watch</h1>
+        <div class="hero__filter">
+          <span class="year">2021</span>
+          <span class="age">18+</span>
+          <span class="season">9 Seasons</span>
+          <span class="rating">8.8</span>
+        </div>
+        <p class="hero__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nunc quis et elit lacinia urna.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.</p>
+        <div class="hero__links">
+          <a href="#" class="hero__link"><img src="icons/play.svg" alt="play"><span>Watch</span>
+          </a>
+          <a href="#" class="hero__link">More information</a>
+        </div>
       </div>
     </div>
+    
     
   </section>
   
-  <section class="shows">
+  <section class="shows" id="TVshows">
     <div class="line"></div>
-    <!-- <h2 class="shows__title">Trending TV Shows ></h2> -->
-    <div class="shows__box">
-      <div class="deco"></div>
-      <a href="#" class="shows__title">Trending TV Shows</a>
+    <div class="container">
+      <div class="shows__box">
+        <div class="deco"></div>
+        <a href="#" class="shows__title">Trending TV Shows</a>
+      </div>
+      
+      <div class="shows__slider">
+        <div>
+          <a href="#" class="shows__link shows__link_active">
+            <img src="img/shows/after.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="shows__link">
+            <img src="img/shows/man.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="shows__link">
+            <img src="img/shows/dunkirk.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="shows__link">
+            <img src="img/shows/enorm.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="shows__link">
+            <img src="img/shows/vanitas.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="shows__link">
+            <img src="img/shows/slp.jpg" alt="slide">
+          </a>
+        </div>
+      </div>
     </div>
     
-    <div class="shows__slider">
-      <div>
-        <a href="#" class="shows__link shows__link_active">
-          <img src="img/shows/after.jpg" alt="slide">
-        </a>
-      </div>
-      <div>
-        <a href="#" class="shows__link">
-          <img src="img/shows/man.jpg" alt="slide">
-        </a>
-      </div>
-      <div>
-        <a href="#" class="shows__link">
-          <img src="img/shows/dunkirk.jpg" alt="slide">
-        </a>
-      </div>
-      <div>
-        <a href="#" class="shows__link">
-          <img src="img/shows/enorm.jpg" alt="slide">
-        </a>
-      </div>
-      <div>
-        <a href="#" class="shows__link">
-          <img src="img/shows/vanitas.jpg" alt="slide">
-        </a>
-      </div>
-      <div>
-        <a href="#" class="shows__link">
-          <img src="img/shows/slp.jpg" alt="slide">
-        </a>
-      </div>
-    </div>
   </section>
 
-  <section class="movies">
-    <div class="movies__box">
-      <div class="deco"></div>
-      <a href="#" class="movies__title">Trending movies</a>
-    </div>
-    
-    <div class="movies__slider">
-      <div>
-        <a href="#" class="movies__link">
-          <img src="img/movies/MY.jpg" alt="slide">
-        </a>
+  <section class="movies" id="movies">
+    <div class="container">
+      <div class="movies__box">
+        <div class="deco"></div>
+        <a href="#" class="movies__title">Trending movies</a>
       </div>
-      <div>
-        <a href="#" class="movies__link  movies__link_active">
-          <img src="img/movies/LY.jpg" alt="slide">
-        </a>
+      
+      <div class="movies__slider">
+        <div>
+          <a href="#" class="movies__link">
+            <img src="img/movies/MY.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="movies__link  movies__link_active">
+            <img src="img/movies/LY.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="movies__link">
+            <img src="img/movies/OI.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="movies__link">
+            <img src="img/movies/SL.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="movies__link">
+            <img src="img/movies/IL.jpg" alt="slide">
+          </a>
+        </div>
+        <div>
+          <a href="#" class="movies__link">
+            <img src="img/movies/MC.jpg" alt="slide">
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="#" class="movies__link">
-          <img src="img/movies/OI.jpg" alt="slide">
-        </a>
-      </div>
-      <div>
-        <a href="#" class="movies__link">
-          <img src="img/movies/SL.jpg" alt="slide">
-        </a>
-      </div>
-      <div>
-        <a href="#" class="movies__link">
-          <img src="img/movies/IL.jpg" alt="slide">
-        </a>
-      </div>
-      <div>
-        <a href="#" class="movies__link">
-          <img src="img/movies/MC.jpg" alt="slide">
-        </a>
-      </div>
-    </div>
       <a href="#" class="movies__more">See more</a>
+    </div>
+    
   </section>
 
-  <section class="genres">
-    <div class="genres__box">
-      <div class="deco"></div>
-      <a href="#" class="genres__title">Popular Genres</a>
+  <section class="genres" id="genres">
+    <div class="container">
+      <div class="genres__box">
+        <div class="deco"></div>
+        <a href="#" class="genres__title">Popular Genres</a>
+      </div>
+      <div class="genres__list">
+        <a href="#">
+          <div class="genres__item genres__item_romance">
+            <img src="img/genres/hearts.svg" alt="romance">
+            <span>Romance</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="genres__item genres__item_drama">
+            <img src="img/genres/cinema.svg" alt="drama">
+            <span>Drama</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="genres__item genres__item_historical">
+            <img src="img/genres/documentary.svg" alt="historical">
+            <span>Historical</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="genres__item genres__item_action">
+            <img src="img/genres/killer.svg" alt="action">
+            <span>Action</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="genres__item genres__item_sci-fi">
+            <img src="img/genres/rocket.svg" alt="sci-fi">
+            <span>Sci-fi</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="genres__item genres__item_horror">
+            <img src="img/genres/ghost.svg" alt="horror">
+            <span>Horror</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="genres__item genres__item_comedy">
+            <img src="img/genres/smile.svg" alt="comedy">
+            <span>Comedy</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="genres__item genres__item_documentary">
+            <img src="img/genres/castle.svg" alt="documentary">
+            <span>Documentary</span>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="genres__list">
-      <a href="#">
-        <div class="genres__item genres__item_romance">
-          <img src="img/genres/hearts.svg" alt="romance">
-          <span>Romance</span>
-        </div>
-      </a>
-      <a href="#">
-        <div class="genres__item genres__item_drama">
-          <img src="img/genres/cinema.svg" alt="drama">
-          <span>Drama</span>
-        </div>
-      </a>
-      <a href="#">
-        <div class="genres__item genres__item_historical">
-          <img src="img/genres/documentary.svg" alt="historical">
-          <span>Historical</span>
-        </div>
-      </a>
-      <a href="#">
-        <div class="genres__item genres__item_action">
-          <img src="img/genres/killer.svg" alt="action">
-          <span>Action</span>
-        </div>
-      </a>
-      <a href="#">
-        <div class="genres__item genres__item_sci-fi">
-          <img src="img/genres/rocket.svg" alt="sci-fi">
-          <span>Sci-fi</span>
-        </div>
-      </a>
-      <a href="#">
-        <div class="genres__item genres__item_horror">
-          <img src="img/genres/ghost.svg" alt="horror">
-          <span>Horror</span>
-        </div>
-      </a>
-      <a href="#">
-        <div class="genres__item genres__item_comedy">
-          <img src="img/genres/smile.svg" alt="comedy">
-          <span>Comedy</span>
-        </div>
-      </a>
-      <a href="#">
-        <div class="genres__item genres__item_documentary">
-          <img src="img/genres/castle.svg" alt="documentary">
-          <span>Documentary</span>
-        </div>
-      </a>
-    </div>
+    
   </section>
 
   <section class="channels">
-    <div class="channels__box">
-      <div class="deco"></div>
-      <a href="#" class="channels__title">Popular Channels</a>
-    </div>
-    <div class="channels__list">
-      <div class="channels__item"></div>
-      <div class="channels__item"></div>
-      <div class="channels__item"></div>
-      <div class="channels__item"></div>
-      <div class="channels__item"></div>
+    <div class="container">
+      <div class="channels__box">
+        <div class="deco"></div>
+        <a href="#" class="channels__title">Popular Channels</a>
+      </div>
+      <div class="channels__list">
+        <div class="channels__item"></div>
+        <div class="channels__item"></div>
+        <div class="channels__item"></div>
+        <div class="channels__item"></div>
+        <div class="channels__item"></div>
+      </div>
     </div>
   </section>
 
   <section class="actors">
-    <div class="actors__box">
-      <div class="deco"></div>
-      <a href="#" class="channels__title">Popular Actors & Directors  </a>
+    <div class="container">
+      <div class="actors__box">
+        <div class="deco"></div>
+        <a href="#" class="channels__title">Popular Actors & Directors</a>
+      </div>
+      <div class="actors__list">
+        <div class="actors__item">
+          <a href="#" class="actors__link">
+            <img src="img/popular/SamBow.jpg" alt="Samanta Bowen">
+            <span>Samanta Bowen</span>
+          </a>
+        </div>
+        <div class="actors__item">
+          <a href="#" class="actors__link">
+            <img src="img/popular/RhysB.jpg" alt="Rhys Birch">
+            <span>Rhys Birch</span>
+          </a>
+        </div>
+        <div class="actors__item">
+          <a href="#" class="actors__link">
+            <img src="img/popular/JamHol.jpg" alt="James Holloway">
+            <span>James Holloway</span>
+          </a>
+        </div>
+        <div class="actors__item">
+          <a href="#" class="actors__link">
+            <img src="img/popular/JoshWal.jpg" alt="Joshua Walton">
+            <span>Joshua Walton</span>
+          </a>
+        </div>
+        <div class="actors__item">
+          <a href="#" class="actors__link">
+            <img src="img/popular/PatEl.jpg" alt="Patrick Elliott">
+            <span>Patrick Elliott</span>
+          </a>
+        </div>
+        <div class="actors__item">
+          <a href="#" class="actors__link">
+            <img src="img/popular/MorgO.jpg" alt="Morgan O'Neill">
+            <span>Morgan O'Neill</span>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="actors__list">
-      <div class="actors__item">
-        <a href="#" class="actors__link">
-          <img src="img/popular/SamBow.jpg" alt="Samanta Bowen">
-          <span>Samanta Bowen</span>
-        </a>
-      </div>
-      <div class="actors__item">
-        <a href="#" class="actors__link">
-          <img src="img/popular/RhysB.jpg" alt="Rhys Birch">
-          <span>Rhys Birch</span>
-        </a>
-      </div>
-      <div class="actors__item">
-        <a href="#" class="actors__link">
-          <img src="img/popular/JamHol.jpg" alt="James Holloway">
-          <span>James Holloway</span>
-        </a>
-      </div>
-      <div class="actors__item">
-        <a href="#" class="actors__link">
-          <img src="img/popular/JoshWal.jpg" alt="Joshua Walton">
-          <span>Joshua Walton</span>
-        </a>
-      </div>
-      <div class="actors__item">
-        <a href="#" class="actors__link">
-          <img src="img/popular/PatEl.jpg" alt="Patrick Elliott">
-          <span>Patrick Elliott</span>
-        </a>
-      </div>
-      <div class="actors__item">
-        <a href="#" class="actors__link">
-          <img src="img/popular/MorgO.jpg" alt="Morgan O'Neill">
-          <span>Morgan O'Neill</span>
-        </a>
-      </div>
-    </div>
+    
   </section>
 
   <section class="soon">
-    <div class="soon__list">
-      <div class="soon__item">
-        <img src="img/circleTop.png" alt="decor" class="soon__decor">
-        <img src="img/circleLeft.png" alt="decor" class="soon__decor">
-        <img src="img/circleBot.png" alt="decor" class="soon__decor">
-        <a href="#" class="soon__link"><img src="img/Bunny.jpg" alt="bunny"></a>
-      </div>
-      <div class="soon__item">
-        <img src="img/2021 2.png" alt="2021">
-        <span class="soon__text">Coming Soon...</span>
+    <div class="container">
+      <div class="soon__list">
+        <div class="soon__item">
+          <img src="img/circleTop.png" alt="decor" class="soon__decor">
+          <img src="img/circleLeft.png" alt="decor" class="soon__decor">
+          <img src="img/circleBot.png" alt="decor" class="soon__decor">
+          <a href="#" class="soon__link"><img src="img/Bunny.jpg" alt="bunny"></a>
+        </div>
+        <div class="soon__item">
+          <img src="img/2021 2.png" alt="2021">
+          <span class="soon__text">Coming Soon...</span>
+        </div>
       </div>
     </div>
+    
   </section>
 
   <section class="register">
@@ -293,48 +314,51 @@
   </section>
 
   <footer class="footer">
-    <div class="footer__box">
-      <div class="footer__item">
-        <a href="#" class="footer_logo">
-          <img src="icons/logo.svg" alt="Mbox">
-        </a>
-        <div class="footer__social">
-          <a href="#">
-            <img src="icons/fb.svg" alt="facebook">
+    <div class="container">
+      <div class="footer__box">
+        <div class="footer__item">
+          <a href="#" class="footer_logo">
+            <img src="icons/logo.svg" alt="Mbox">
           </a>
+          <div class="footer__social">
             <a href="#">
-              <img src="icons/twit.svg" alt="twitter">
+              <img src="icons/fb.svg" alt="facebook">
             </a>
-            <a href="#">
-              <img src="icons/LinkdIn.svg" alt="linkedIn">
-            </a>
-            <a href="#">
-              <img src="icons/instagr.svg" alt="instagram">
-            </a>
-          </div>
-      </div>
-      <div class="footer__item">
-        <a href="#" class="footer__link">Voice over and Subtitle</a>
-        <a href="#" class="footer__link">Media Center</a>
-        <a href="#" class="footer__link">Privacy</a>
-        <a href="#" class="footer__link">Contact us</a>
-      </div>
-      <div class="footer__item">
-        <a href="#" class="footer__link">Voice Description</a>
-        <a href="#" class="footer__link">Investor Relations</a>
-        <a href="#" class="footer__link">Legal Provisions</a>
-      </div>
-      <div class="footer__item">
-        <a href="#" class="footer__link">Help Center</a>
-        <a href="#" class="footer__link">Job Opportunities</a>
-        <a href="#" class="footer__link">Cookies Preferences</a>
-      </div>
-      <div class="footer__item">
-        <a href="#" class="footer__link">Gift Cards</a>
-        <a href="#" class="footer__link">Terms of Use</a>
-        <a href="#" class="footer__link">Corporate Informations</a>
+              <a href="#">
+                <img src="icons/twit.svg" alt="twitter">
+              </a>
+              <a href="#">
+                <img src="icons/LinkdIn.svg" alt="linkedIn">
+              </a>
+              <a href="#">
+                <img src="icons/instagr.svg" alt="instagram">
+              </a>
+            </div>
+        </div>
+        <div class="footer__item">
+          <a href="#" class="footer__link">Voice over and Subtitle</a>
+          <a href="#" class="footer__link">Media Center</a>
+          <a href="#" class="footer__link">Privacy</a>
+          <a href="#" class="footer__link">Contact us</a>
+        </div>
+        <div class="footer__item">
+          <a href="#" class="footer__link">Voice Description</a>
+          <a href="#" class="footer__link">Investor Relations</a>
+          <a href="#" class="footer__link">Legal Provisions</a>
+        </div>
+        <div class="footer__item">
+          <a href="#" class="footer__link">Help Center</a>
+          <a href="#" class="footer__link">Job Opportunities</a>
+          <a href="#" class="footer__link">Cookies Preferences</a>
+        </div>
+        <div class="footer__item">
+          <a href="#" class="footer__link">Gift Cards</a>
+          <a href="#" class="footer__link">Terms of Use</a>
+          <a href="#" class="footer__link">Corporate Informations</a>
+        </div>
       </div>
     </div>
+    
   </footer>
   
 </body>
