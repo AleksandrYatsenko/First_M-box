@@ -1,0 +1,66 @@
+.actors {
+  width: 100%;
+  min-height: 308px;
+  padding: 0 80px 0 80px;
+  margin-top: 70px;
+  &__box {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 40px;
+  }
+  &__title {
+    position: relative;
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 20px;
+    text-decoration: none;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 14px;
+      height: 3px;
+      right: -27px;
+      background-color: #fff;
+    }
+    &::before {
+      top: 7px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      bottom: 2px;
+      transform: rotate(-45deg);
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    img {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      border: none;
+    }
+    span {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
