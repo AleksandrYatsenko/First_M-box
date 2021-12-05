@@ -38,24 +38,24 @@
       position: absolute;
       top: 25px;
       left: 281px;
-      z-index: 1;
+      // z-index: 1;
     }
   &__decor:nth-child(2) {
       position: absolute;
       top: 63px;
       left: 41px;
-      z-index: 1;
+      // z-index: 1;
     }
   &__decor:last-of-type {
       position: absolute;
       top: 281px;
       left: 330px;
-      z-index: 1;
+      // z-index: 1;
     }
   &__link {
     display: block;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     height: 100%;
     top: 0;
