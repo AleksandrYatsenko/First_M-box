@@ -1,6 +1,5 @@
 # First_M-box
-first landing
-!DOCUMENT html
-<html>
+It is a first landing
+
 <h2>Hello</h2>
-</html>
+
