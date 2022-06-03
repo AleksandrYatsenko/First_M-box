@@ -10,6 +10,9 @@
   width: 100%;
   min-height: 464px;
   padding: 40px 0;
+  &__heading {
+    display: none;
+  }
   &__box {
     display: flex;
     align-items: center;
@@ -57,6 +60,7 @@
     img {
       border-radius: 21px;
     }
+
   }
   &__link {
     &_active {
@@ -64,5 +68,8 @@
         box-shadow: 0px 4px 30px -12px #26FFF2;
       }
     }
+  }
+  .tns-liveregion {
+    display: none;
   }
 }
