@@ -21,8 +21,10 @@
 // });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('.shows__link');
-  const arrowNext = document.querySelector('.arrowNext');
+
+  const sliderBox = document.querySelector('.shows__slider'),
+        arrowNext = document.querySelector('.arrowNext'),
+        links = sliderBox.querySelectorAll('.shows__link');
 
   arrowNext.addEventListener('click', () => {
     let index;
@@ -30,10 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if(item.classList.contains('shows__link_active')) {
         index = i;
         item.classList.remove('shows__link_active');
-        console.log(index);
       } 
-    })
+    });
     index++;
-    links[index].classList.add('shows__link_active');
+    if(index === links.length) {
+      index = 0;
+      links[index].classList.add('shows__link_active');
+    } else {
+      links[index].classList.add('shows__link_active');
+    }
+    
   });
 });
