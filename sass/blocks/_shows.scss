@@ -53,6 +53,7 @@
     }
   }
   &__slider {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,7 +61,15 @@
     img {
       border-radius: 21px;
     }
-
+    .arrowNext {
+      box-sizing: content-box;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: -63px;
+      padding: 130px 15px;
+      transform: translateY(-50%);
+    }
   }
   &__link {
     &_active {
@@ -69,7 +78,9 @@
       }
     }
   }
-  .tns-liveregion {
-    display: none;
-  }
+  
+  // .tns-slide-active {
+    
+  // }
+  
 }
