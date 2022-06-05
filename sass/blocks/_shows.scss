@@ -54,14 +54,14 @@
       transform: rotate(-45deg);
     }
   }
-  .arrowNext {
-    box-sizing: content-box;
-    display: block;
-    position: absolute;
-    top: 35%;
-    right: 63px;
-    padding: 130px 10px;
-  }
+  // .arrowNext {
+  //   box-sizing: content-box;
+  //   display: block;
+  //   position: absolute;
+  //   top: 35%;
+  //   right: 63px;
+  //   padding: 130px 10px;
+  // }
   &__slider {
     width: 100%;
     display: flex;
@@ -75,15 +75,8 @@
     }
   }
   &__link {
-    &_active {
-      img {
-        box-shadow: 0px 4px 30px -12px #26FFF2;
-      }
+    img:hover {
+      box-shadow: 0px 4px 30px -12px #26FFF2;
     }
   }
-  
-  // .tns-slide-active {
-    
-  // }
-  
 }

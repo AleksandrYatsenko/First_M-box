@@ -44,29 +44,31 @@
     }
   }
   &__link {
-    &_active {
-      img {
-        box-shadow: 0px 4px 30px -12px #26FFF2;
-      }
+    img:hover {
+      box-shadow: 0px 4px 30px -12px #26FFF2;
     }
   }
+  
   &__more {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 140px;
     height: 50px;
-    background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+    background-color: #fff;
     border-radius: 100px;
     border: none;
-    color: #fff;
+    color: #323232;
     font-size: 16px;
     font-weight: 800;
     line-height: 20px;
+    text-align: center;
     text-decoration: none;
+    transition: all 0.5s;
     &:hover {
+      color: #fff;
+      background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
       box-shadow: 0px 6px 50px rgba(50, 108, 255, 0.6);
     }
-    
   }
 }
