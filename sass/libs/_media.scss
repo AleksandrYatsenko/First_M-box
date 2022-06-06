@@ -15,10 +15,21 @@
       margin-top: 20px;
     }
   }
+
+  .header {
+    &__nav-item {
+      margin: 0 20px;
+    }
+    &__icons {
+      gap: 50px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
   .header {
-    
+    &__logo {
+      max-width: 130px;
+    }
   }
 }
