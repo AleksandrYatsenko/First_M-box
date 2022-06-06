@@ -1,6 +1,8 @@
 .hero {
   min-height: 825px;
   width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
   padding: 0 0 170px 0;
   background: url('../img/hero_bg.jpg') center center no-repeat;
   &__info {
@@ -100,7 +102,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1500px;
+  width: 100%;
+  
   margin: 0 auto;
   padding: 15px;
   &__logo {
