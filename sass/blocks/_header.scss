@@ -3,12 +3,13 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
-  padding: 15px 50px;
+  min-height: 70px;
+  margin: 15px 0 auto;
+  padding: 0 50px;
+  position: relative;
   &__logo {
     display: block;
     max-width: 157px;
-    height: 70px;
     img {
       width: 100%;
     }
@@ -31,7 +32,7 @@
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    transition: all 0.5s linear;
+    transition: all 0.4s linear;
     &::before {
       content: "";
       display: block;
@@ -67,5 +68,8 @@
         }
       }
     }
+  }
+  &__burger {
+    display: none;
   }
 }

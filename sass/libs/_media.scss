@@ -4,10 +4,11 @@
     padding: 0 0 100px 0;
     &__info {
       margin: 90px 0 0 130px;
-      min-width: 500px;
+      max-width: 600px;
     }
     &__title {
       font-size: 84px;
+      line-height: 90px;
     }
     &__filter {
       margin-top: 36px;
@@ -18,7 +19,7 @@
   }
 
   .header {
-    padding: 15px 35px;
+    padding: 0 35px;
     &__nav-item {
       margin: 0 20px;
     }
@@ -36,6 +37,7 @@
     }
     &__title {
       font-size: 60px;
+      line-height: 70px;
     }
     &__filter {
       margin-top: 25px;
@@ -47,9 +49,90 @@
     }
   }
   .header {
-    padding: 15px 20px;
+    min-height: 58px;
+    padding: 0 20px;
     &__logo {
       max-width: 120px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    justify-content: space-around;
+    min-height: 50px;
+    margin-top: 10px;
+    padding-right: 80px;
+    &__logo {
+      max-width: 110px;
+    }
+    &__burger {
+      display: block;
+      position: absolute;
+      width: 36px;
+      height: 32px;
+      padding: 10px 5px;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      span {
+        content:'';
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 2px;
+        background-color: #fff;
+      }
+    }
+    &__nav {
+      position: absolute;
+      top: 50px;
+      left: -110%;
+      justify-content: start;
+      &_active {
+        left: 0;
+        width: 80vw;
+        height: 100vh;
+        padding: 10px 20px;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 3;
+      }
+    }
+    &__nav-item {
+      width: 100%;
+      margin: 5px 0;
+      &:hover {
+        transform: none;
+      }
+    }
+    &__link {
+      display: block;
+      width: 100%;
+      padding: 15px 40px;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.7);
+      &:hover {
+        &::before {
+          width: 0;
+        }
+      }
+    }
+  }
+  .hero {
+    min-height: 410px;
+    padding-bottom: 50px;
+    &__info {
+      margin: 50px 0 0 50px;
+      max-width: 370px;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    &__filter {
+      margin-top: 15px;
     }
   }
 }
