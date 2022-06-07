@@ -89,13 +89,13 @@
       position: absolute;
       top: 50px;
       left: -110%;
+      flex-direction: column;
       justify-content: start;
       &_active {
         left: 0;
         width: 80vw;
         height: 100vh;
         padding: 10px 20px;
-        flex-direction: column;
         background-color: rgba(0, 0, 0, 0.9);
         z-index: 3;
       }
@@ -133,6 +133,45 @@
     }
     &__filter {
       margin-top: 15px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    min-height: 40px;
+    margin-right: 75px;
+    &__logo {
+      display: none;
+    }
+  }
+  .hero {
+    min-height: 370px;
+    padding-bottom: 40px;
+    &__info {
+      margin: 30px auto;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+      text-align: center;
+    }
+    &__filter {
+      justify-content: space-around;
+      span {
+        margin: 0;
+        font-size: 14px;
+      } 
+    }
+    &__descr {
+      display: none;
+    }
+    &__links {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 35px;
+    }
+    &__link:first-child {
+      margin: 20px 0 0 0;
     }
   }
 }
