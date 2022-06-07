@@ -1,14 +1,14 @@
 .hero {
-  min-height: 825px;
+  min-height: 750px;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 0 0 170px 0;
+  padding: 247px 0 170px 0;
   background: url('../img/hero_bg.jpg') center/cover no-repeat;
   &__info {
     max-width: 577px;
     min-height: 249px;
-    margin: 247px 0 0 166px;
+    margin: 0 0 0 166px;
   }
   &__title {
     font-family: 'Marcellus', serif;
@@ -71,10 +71,9 @@
     border-radius: 100px;
     font-size: 16px;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 20px;
     color: #323232;
     text-align: center;
-    vertical-align: middle;
     text-decoration: none;
     transition: all 0.4s linear;
     overflow: hidden;

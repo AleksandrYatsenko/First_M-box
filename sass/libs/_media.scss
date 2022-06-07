@@ -1,3 +1,14 @@
+@media (max-width: 1439px) {
+  .shows {
+    &__slider {
+      gap: 30px;
+    }
+    &__box {
+      margin: 50px 0 30px;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .hero {
     min-height: 530px;
