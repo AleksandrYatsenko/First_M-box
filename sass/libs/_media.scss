@@ -1,9 +1,10 @@
 @media (max-width: 1199px) {
   .hero {
-    min-height: 590px;
+    min-height: 530px;
     padding: 0 0 100px 0;
     &__info {
       margin: 90px 0 0 130px;
+      min-width: 500px;
     }
     &__title {
       font-size: 84px;
@@ -17,6 +18,7 @@
   }
 
   .header {
+    padding: 15px 35px;
     &__nav-item {
       margin: 0 20px;
     }
@@ -27,9 +29,27 @@
 }
 
 @media (max-width: 991px) {
+  .hero {
+    min-height: 510px;
+    &__info {
+      margin: 60px 0 0 70px;
+    }
+    &__title {
+      font-size: 60px;
+    }
+    &__filter {
+      margin-top: 25px;
+    }
+    &__descr {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
   .header {
+    padding: 15px 20px;
     &__logo {
-      max-width: 130px;
+      max-width: 120px;
     }
   }
 }
