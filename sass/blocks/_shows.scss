@@ -29,7 +29,8 @@
   }
   &__title {
     position: relative;
-    margin-left: 20px;
+    // margin-left: 20px;
+    padding: 10px 20px 10px 12px;
     font-size: 28px;
     font-weight: 400;
     color: #fff;
@@ -40,17 +41,17 @@
       content: "";
       display: block;
       position: absolute;
-      width: 14px;
+      width: 10px;
       height: 3px;
-      right: -27px;
+      right: 0;
       background-color: #fff;
     }
     &::before {
-      top: 7px;
+      top: 18px;
       transform: rotate(45deg);
     }
     &::after {
-      bottom: 2px;
+      bottom: 14px;
       transform: rotate(-45deg);
     }
   }
@@ -71,14 +72,13 @@
     align-items: center;
     gap: 40px;
     overflow: hidden;
-    
   }
   &__link {
     display: block;
     max-width: 206px;
     img {
       width: 100%;
-      border-radius: 21px;
+      border-radius: 20px;
       &:hover {
         box-shadow: 0px 4px 30px -12px #26FFF2;
       }

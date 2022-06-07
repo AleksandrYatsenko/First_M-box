@@ -1,14 +1,14 @@
 .hero {
-  min-height: 750px;
+  min-height: 825px;
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 247px 0 170px 0;
+  padding: 10px 0 170px 0;
   background: url('../img/hero_bg.jpg') center/cover no-repeat;
   &__info {
     max-width: 577px;
     min-height: 249px;
-    margin: 0 0 0 166px;
+    margin: 247px 0 0 166px;
   }
   &__title {
     font-family: 'Marcellus', serif;
