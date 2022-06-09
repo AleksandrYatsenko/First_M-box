@@ -1,7 +1,6 @@
 .genres {
   width: 100%;
-  min-height: 498px;
-  margin-top: 100px;
+  padding: 100px 0 20px;
   &__box {
     display: flex;
     align-items: center;
@@ -51,8 +50,18 @@
     align-items: center;
     width: 340px;
     height: 198px;
+    padding: 45px 0;
     border-radius: 20px;
     border: none;
+    transition: all .2s linear;
+    img {
+      display: block;
+      max-width: 80px;
+      height: 100%;
+    }
+    &:hover {
+      transform: scale(105%);
+    }
     span {
       margin-top: 8px;
       font-size: 28px;
@@ -74,6 +83,9 @@
       background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
     }
     &_sci-fi {
+      img {
+        transform: rotate(46.5deg);
+      }
       background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
     }
     &_horror {

@@ -16,7 +16,6 @@
 .shows {
   position: relative;
   width: 100%;
-  min-height: 464px;
   padding: 40px 0;
   &__heading {
     display: none;
@@ -28,7 +27,6 @@
   }
   &__title {
     position: relative;
-    // margin-left: 20px;
     padding: 10px 20px 10px 12px;
     font-size: 28px;
     font-weight: 400;
