@@ -44,11 +44,14 @@
     align-items: center;
     margin-bottom: 55px;
     gap: 40px;
-    overflow: hidden;
   }
   &__link {
     display: block;
     max-width: 206px;
+    transition: all .2s linear;
+    &:hover {
+      transform: scale(105%);
+    }
     img {
       width: 100%;
       border-radius: 20px;
@@ -73,7 +76,7 @@
     line-height: 20px;
     text-align: center;
     text-decoration: none;
-    transition: all 0.5s;
+    transition: all 0.2s linear;
     &:hover {
       color: #fff;
       background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);

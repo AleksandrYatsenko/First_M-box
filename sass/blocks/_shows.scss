@@ -68,11 +68,14 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    overflow: hidden;
   }
   &__link {
     display: block;
     max-width: 206px;
+    transition: all .2s linear;
+    &:hover {
+      transform: scale(105%);
+    }
     img {
       width: 100%;
       border-radius: 20px;

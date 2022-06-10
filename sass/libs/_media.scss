@@ -16,7 +16,8 @@
     }
   }
   .genres,
-  .channels {
+  .channels,
+  .actors {
     padding-top: 60px;
     &__box {
       margin-bottom: 30px;
@@ -103,7 +104,8 @@
     }
   }
   .genres,
-  .channels {
+  .channels,
+  .actors {
     padding-top: 40px;
     &__title {
       font-size: 22px;
@@ -122,6 +124,16 @@
     &__item {
       width: 200px;
       height: 120px;
+    }
+  }
+  .actors {
+    padding: 30px 0 20px;
+    &__link {
+      width: 140px;
+      span {
+        font-size: 16px;
+        line-height: 16px;
+      }
     }
   }
 }
@@ -183,8 +195,9 @@
       }
     }
   }
-  .genres
-  .channels {
+  .genres,
+  .channels,
+  .actors {
     &__box {
       margin-bottom: 20px;
     }
@@ -211,6 +224,20 @@
       span {
         font-size: 24px;
         line-height: 24px;
+      }
+    }
+  }
+  .actors {
+    padding: 20px 0;
+    &__box {
+      margin-top: 10px;
+    }
+    &__link {
+      width: 110px;
+      span {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 12px;
       }
     }
   }
@@ -356,8 +383,9 @@
       }
     }
   }
-  .genres
-  .channels {
+  .genres,
+  .channels,
+  .actors {
     padding-top: 30px;
     &__box {
       margin: 10px 0 10px;
@@ -391,6 +419,15 @@
         font-size: 18px;
         line-height: 18px;
       }
+    }
+  }
+  .actors {
+    padding: 20px 0;
+    &__box {
+      margin-bottom: 20px;
+    }
+    &__link {
+      width: 80px;
     }
   }
 }
@@ -505,9 +542,18 @@
       }
     }
   }
-  .channels {
+  .channels,
+  .actors {
     &__list {
       gap: 15px;
+    }
+  }
+  .actors {
+    &__list {
+      overflow: hidden;
+    }
+    &__link {
+      width: 86px;
     }
   }
 }
