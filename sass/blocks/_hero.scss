@@ -1,5 +1,4 @@
 .hero {
-  min-height: 825px;
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
@@ -75,7 +74,7 @@
     color: #323232;
     text-align: center;
     text-decoration: none;
-    transition: all 0.4s linear;
+    transition: all 0.2s linear;
     overflow: hidden;
     &:first-child {
       display: flex;
@@ -87,7 +86,7 @@
         width: 14px;
         height: 18px;
         margin-right: 12px;
-        transition: fill 0.4s linear;
+        transition: fill 0.2s linear;
       }
     }
     &:hover {

@@ -1,7 +1,7 @@
 .channels {
   width: 100%;
   min-height: 193px;
-  margin-top: 70px;
+  padding: 70px 0 50px;
   &__box {
     display: flex;
     align-items: center;
@@ -36,14 +36,14 @@
   }
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: 35px;
   }
   &__item {
-    width: 260px;
-    height: 118px;
+    max-width: 260px;
+    max-height: 118px;
     background-color: #fff;
     border-radius: 20px;
     border: none;
