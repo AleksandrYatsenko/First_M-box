@@ -136,6 +136,20 @@
       }
     }
   }
+  .soon {
+    &__item {
+      &:last-child {
+        padding: 40px 0 40px;
+        img {
+          max-width: 252px;
+        }
+        span {
+          margin-top: 20px;
+          font-size: 48px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
