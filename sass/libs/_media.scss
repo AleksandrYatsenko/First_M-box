@@ -37,6 +37,29 @@
       width: 230px;
       height: 130px;
     }
+  }
+  .soon {
+    &__item:last-child {
+      padding: 55px 0 40px 0;
+    }
+    &__year {
+      width: 55%;
+    }
+    &__text {
+      font-size: 55px;
+    }
+    &__decor:first-child {
+      top: 40px;
+      left: 270px;
+    }
+    &__decor:nth-child(2) {
+      width: 60px;
+      height: 200px;
+    }
+    &__decor:last-of-type {
+      top: 250px;
+      left: 310px;
+    }
   }  
 }
 
@@ -136,20 +159,7 @@
       }
     }
   }
-  .soon {
-    &__item {
-      &:last-child {
-        padding: 40px 0 40px;
-        img {
-          max-width: 252px;
-        }
-        span {
-          margin-top: 20px;
-          font-size: 48px;
-        }
-      }
-    }
-  }
+  
 }
 
 @media (max-width: 991px) {

@@ -3,8 +3,9 @@
   padding: 100px 0 50px;
   &__list {
     display: flex;
-    align-items: flex-start;
+    position: relative;
     max-width: 1440px;
+    max-height: 341px;
     margin: 0 auto;
     border-radius: 20px;
     border: none;
@@ -13,57 +14,67 @@
   }
   &__item {
     width: 50%;
-    &:first-child {
-      position: relative;
-    }
+    
     &:last-child {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
-      padding: 71px 0 60px;
-      img {
-        max-width: 294px;
-      }
-      span {
-        margin-top: 31px;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 20px;
-        color: #fff;
-      }
+      padding: 65px 0 50px 0;
     }
   }
-  &__decor:first-child {
-      position: absolute;
-      top: 25px;
-      left: 281px;
-      // z-index: 1;
-    }
-  &__decor:nth-child(2) {
-      position: absolute;
-      top: 63px;
-      left: 41px;
-      // z-index: 1;
-    }
-  &__decor:last-of-type {
-      position: absolute;
-      top: 281px;
-      left: 330px;
-      // z-index: 1;
-    }
+  &__future {
+    max-width: 460px;
+    max-height: 210px;
+    margin: 0 auto;
+  }
   &__link {
     display: block;
-    position: absolute;
-    z-index: 1;
+    line-height: 0;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    img {
-      width: 100%;
-      border-radius: 20px 0 0 20px;
-    }
+    text-decoration: none;
   }
+  &__banner {
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+  }
+  &__year {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  &__text {
+    display: block;
+    margin: 0 auto;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+  }
+  &__decor:first-child {
+    position: absolute;
+    width: 215px;
+    height: 40px;
+    top: 25px;
+    left: 281px;
+    // z-index: 1;
+  }
+  &__decor:nth-child(2) {
+    position: absolute;
+    width: 66px;
+    height: 215px;
+    top: 63px;
+    left: 41px;
+    // z-index: 1;
+  }
+  &__decor:last-of-type {
+    position: absolute;
+    width: 215px;
+    height: 40px;
+    top: 281px;
+    left: 330px;
+    // z-index: 1;
+  }
+  
 }
