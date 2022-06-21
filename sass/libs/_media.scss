@@ -60,6 +60,9 @@
     //   top: 250px;
     //   left: 310px;
     // }
+  }
+  .register {
+    padding: 80px 0;
   }  
 }
 
@@ -190,6 +193,19 @@
       font-size: 40px;
     }
   }
+  .register {
+    &__box {
+      justify-content: space-evenly;
+    }
+    &__ask {
+      width: 70%;
+      margin-right: 10px;
+      font-size: 42px;
+    }
+    &__btn {
+      margin-right: 0;
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -316,10 +332,21 @@
       left: 180px;
     }
     &__year {
-      width: 55%;
+      width: 50%;
     }
     &__text {
-      font-size: 30px;
+      font-size: 26px;
+    }
+  }
+  .register {
+    padding: 55px 0;
+    &__box {
+      min-height: 200px;
+      margin: 0 40px;
+      padding: 0 30px;
+    }
+    &__ask {
+      font-size: 32px;
     }
   }
 }
@@ -538,6 +565,19 @@
       font-size: 20px;
     }
   }
+  .register {
+    padding: 30px 0;
+    &__box {
+      min-height: 130px;
+      padding: 0 25px;
+    }
+    &__ask {
+      font-size: 22px;
+    }
+    &__btn {
+      padding: 15px;
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -680,6 +720,19 @@
     }
     &__banner {
       border-radius: 10px;
+    }
+  }
+  .register {
+    padding: 20px 0;
+    &__box {
+      flex-direction: column;
+      margin: 0;
+      padding: 0 24px;
+    }
+    &__ask {
+      width: 100%;
+      font-size: 18px;
+      text-align: center;
     }
   }
 }

@@ -1,12 +1,13 @@
 .register {
   width: 100%;
+  padding: 121px 0;
   &__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1224px;
     min-height: 270px;
-    margin: 121px auto;
+    margin: 0 51px;
     padding: 0 51px;
     background: url('../img/register.jpg') center center/cover no-repeat;
     border-radius: 21px;
@@ -25,17 +26,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-width: 141px;
     width: 141px;
     height: 50px;
     margin-right: 95px;
+    padding: 15px 18px;
     border-radius: 100px;
     border: none;
     background-color: #fff;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1;
     color: #323232;
-    transition: all 0.5s;
+    transition: all 0.3s;
     &:hover {
       color: #fff;
       background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
