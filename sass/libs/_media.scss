@@ -48,18 +48,18 @@
     &__text {
       font-size: 55px;
     }
-    &__decor:first-child {
-      top: 40px;
-      left: 270px;
-    }
-    &__decor:nth-child(2) {
-      width: 60px;
-      height: 200px;
-    }
-    &__decor:last-of-type {
-      top: 250px;
-      left: 310px;
-    }
+    // &__decor:first-child {
+    //   top: 40px;
+    //   left: 270px;
+    // }
+    // &__decor:nth-child(2) {
+    //   width: 60px;
+    //   height: 200px;
+    // }
+    // &__decor:last-of-type {
+    //   top: 250px;
+    //   left: 310px;
+    // }
   }  
 }
 
@@ -159,7 +159,37 @@
       }
     }
   }
-  
+  .soon {
+    padding: 50px 0 40px;
+    &__item:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 0;
+    }
+    &__decor:first-child {
+      width: 180px;
+      height: 30px;
+      left: 260px;
+    }
+    &__decor:nth-child(2) {
+      width: 36px;
+      height: 110px;
+      top: 55px;
+    }
+    &__decor:last-of-type {
+      width: 175px;
+      height: 30px;
+      top: 145px;
+      left: 210px;
+    }
+    &__year {
+      width: 65%;
+    }
+    &__text {
+      font-size: 40px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -263,6 +293,33 @@
         font-size: 12px;
         line-height: 12px;
       }
+    }
+  }
+  .soon {
+    padding: 35px 0;
+    &__decor:first-child {
+      width: 140px;
+      height: 30px;
+      top: 20px;
+      left: 170px;
+    }
+    &__decor:nth-child(2) {
+      width: 35px;
+      height: 110px;
+      top: 35px;
+      left: 25px;
+    }
+    &__decor:last-of-type {
+      width: 130px;
+      height: 25px;
+      top: 130px;
+      left: 180px;
+    }
+    &__year {
+      width: 55%;
+    }
+    &__text {
+      font-size: 30px;
     }
   }
 }
@@ -454,6 +511,33 @@
       width: 80px;
     }
   }
+  .soon {
+    padding: 30px 0 25px;
+    &__decor:first-child {
+      width: 110px;
+      height: 20px;
+      top: 20px;
+      left: 110px;
+    }
+    &__decor:nth-child(2) {
+      width: 25px;
+      height: 80px;
+      top: 30px;
+      left: 25px;
+    }
+    &__decor:last-of-type {
+      width: 110px;
+      height: 20px;
+      top: 95px;
+      left: 140px;
+    }
+    &__year {
+      width: 35%;
+    }
+    &__text {
+      font-size: 20px;
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -566,6 +650,9 @@
       }
     }
   }
+  .channels {
+    padding-bottom: 30px;
+  }
   .channels,
   .actors {
     &__list {
@@ -578,6 +665,21 @@
     }
     &__link {
       width: 86px;
+    }
+  }
+  .soon {
+    &__item:last-child,
+    &__decor {
+      display: none;
+    }
+    &__list {
+      display: block;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__banner {
+      border-radius: 10px;
     }
   }
 }
