@@ -55,13 +55,15 @@
   &__links {
     display: flex;
     margin-top: 25px;
+    justify-content: flex-start;
     align-items: center;
+    gap: 30px;
   }
   &__link {
     display: block;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 195px;
     height: 50px;
     padding: 15px 30px;
@@ -70,16 +72,17 @@
     border-radius: 100px;
     font-size: 16px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1;
     color: #323232;
     text-align: center;
     text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     transition: all 0.2s linear;
     overflow: hidden;
     &:first-child {
       display: flex;
       width: 141px;
-      margin-right: 30px;
       justify-content: center;
       align-items: center;
       svg {

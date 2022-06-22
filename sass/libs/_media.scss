@@ -224,7 +224,7 @@
     &__descr {
       margin-top: 10px;
       font-size: 16px;
-      line-height: 20px;
+      line-height: 18px;
     }
   }
   .header {
@@ -435,15 +435,18 @@
   .hero {
     padding-bottom: 50px;
     &__info {
-      margin: 50px 0 0 50px;
+      margin: 45px 0 0 30px;
       max-width: 370px;
     }
     &__title {
       font-size: 50px;
-      line-height: 60px;
+      line-height: 1;
     }
     &__filter {
       margin-top: 15px;
+    }
+    &__descr {
+      font-size: 14px;
     }
   }
   .deco {
