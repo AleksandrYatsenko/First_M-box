@@ -1,24 +1,22 @@
 
-// let slider = tns({
-//   container: '.shows__slider',
-//   items: 6,
-//   nav: false,
-//   loop: true,
-//   center: true,
-//   responsive: {
-//     640: {
-//       edgePadding: 20,
-//       gutter: 20,
-//       items: 3
-//     },
-//     700: {
-//       gutter: 30
-//     },
-//     900: {
-//       items: 6
-//     }
-//   }
-// });
+let slider = tns({
+  container: '.shows__slider',
+  items: 6,
+  nav: false,
+  responsive: {
+    576: {
+      edgePadding: 20,
+      gutter: 20,
+      items: 3
+    },
+    768: {
+      gutter: 40
+    },
+    992: {
+      items: 6
+    }
+  }
+});
 
 // document.addEventListener('DOMContentLoaded', () => {
 
