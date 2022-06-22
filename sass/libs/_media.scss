@@ -15,7 +15,6 @@
       margin: 50px 0 30px;
     }
   }
-  .genres,
   .channels,
   .actors {
     padding-top: 60px;
@@ -27,9 +26,13 @@
     }
   }
   .genres {
+    padding-top: 60px;
+    &__list {
+      gap: 20px;
+    }
     &__item {
-      width: 300px;
-      height: 175px;
+      flex-basis: 22%;
+      padding: 30px;
     }
   }
   .channels {
@@ -40,7 +43,7 @@
   }
   .soon {
     &__item:last-child {
-      padding: 55px 0 40px 0;
+      padding: 40px 0 35px 0;
     }
     &__year {
       width: 55%;
@@ -48,18 +51,6 @@
     &__text {
       font-size: 55px;
     }
-    // &__decor:first-child {
-    //   top: 40px;
-    //   left: 270px;
-    // }
-    // &__decor:nth-child(2) {
-    //   width: 60px;
-    //   height: 200px;
-    // }
-    // &__decor:last-of-type {
-    //   top: 250px;
-    //   left: 310px;
-    // }
   }
   .register {
     padding: 80px 0;
@@ -129,7 +120,6 @@
       }
     }
   }
-  .genres,
   .channels,
   .actors {
     padding-top: 40px;
@@ -141,9 +131,21 @@
     }
   }
   .genres {
+    padding-top: 40px;
+    &__box {
+      margin: 20px 0;
+    }
+    &__list {
+      gap: 15px;
+    }
     &__item {
-      width: 240px;
-      height: 150px;
+      padding: 25px;
+      img {
+        width: 60px;
+      }
+      span {
+        font-size: 22px;
+      }
     }
   }
   .channels {
@@ -168,7 +170,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 30px 0;
+      padding: 25px 0;
     }
     &__decor:first-child {
       width: 180px;
@@ -183,7 +185,6 @@
     &__decor:last-of-type {
       width: 175px;
       height: 30px;
-      top: 145px;
       left: 210px;
     }
     &__year {
@@ -285,15 +286,14 @@
     }
   }
   .genres {
-    &__list {
-      gap: 25px;
-    }
     &__item {
-      width: 340px;
-      height: 175px;
+      padding: 15px;
+      img {
+        width: 50px;
+      }
       span {
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 1;
       }
     }
   }
@@ -328,7 +328,6 @@
     &__decor:last-of-type {
       width: 130px;
       height: 25px;
-      top: 130px;
       left: 180px;
     }
     &__year {
@@ -353,7 +352,7 @@
     min-height: 180px;
     padding: 40px 0;
     &__item:not(:first-child) {
-      gap: 15px;
+      gap: 5px;
     }
     &__logo {
       height: 50px;
@@ -364,7 +363,7 @@
        
     }
     &__link {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 1;
     }
   }
@@ -538,13 +537,16 @@
     
   }
   .genres {
+    &__list {
+      gap: 12px;
+    }
     &__item {
-      width: 250px;
-      height: 125px;
-      padding: 30px 0;
+      padding: 15px;
+      img {
+        width: 35px;
+      }
       span {
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 14px;
       }
     }
   }
@@ -574,7 +576,6 @@
     &__decor:last-of-type {
       width: 110px;
       height: 20px;
-      top: 95px;
       left: 140px;
     }
     &__year {
@@ -598,22 +599,27 @@
     }
   }
   .footer {
+    padding: 20px 0;
     &__box {
-      padding: 0 30px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
+      padding: 0 10px;
+      flex-wrap: wrap;
+      gap: 20px 10px;
     }
-    &__item {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+    &__item:first-child {
       width: 100%;
+      flex-grow: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &__item:not(:first-child) {
+      width: 45%;
+      align-items: center;
     }
     &__social {
       margin-top: 0;
       align-items: center;
+      gap: 20px;
     }
   }
 }
@@ -715,17 +721,9 @@
     }
   }
   .genres {
-    &__list {
-      gap: 15px;
-    }
     &__item {
-      width: 135px;
-      height: 80px;
-      padding: 25px 0;
-      span {
-        font-size: 16px;
-        line-height: 16px;
-      }
+      flex-basis: 45%;
+      padding: 10px;
     }
   }
   .channels {
@@ -739,7 +737,7 @@
   }
   .actors {
     &__list {
-      overflow: hidden;
+      overflow-x: hidden;
     }
     &__link {
       width: 86px;
@@ -776,6 +774,10 @@
   .footer {
     &__box {
       padding: 0;
+      row-gap: 15px;
+    }
+    &__link {
+      font-size: 11px;
     }
   }
 }
