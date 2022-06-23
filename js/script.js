@@ -3,20 +3,31 @@ let slider = tns({
   container: '.shows__slider',
   items: 6,
   nav: false,
-  responsive: {
-    576: {
-      edgePadding: 20,
-      gutter: 20,
-      items: 3
-    },
-    768: {
-      gutter: 40
-    },
-    992: {
-      items: 6
-    }
-  }
+  gutter: 27,
+  controls: false,
+  mouseDrag: true,
+  // responsive: {
+  //   576: {
+  //     edgePadding: 20,
+  //     gutter: 20,
+  //     items: 3
+  //   },
+  //   768: {
+  //     gutter: 20
+  //   },
+  //   992: {
+  //     items: 6
+  //   }
+  // }
 });
+
+document.querySelector('.arrowPrev').addEventListener('click', function () {
+  slider.goTo('prev')
+});
+document.querySelector('.arrowNext').addEventListener('click', function () {
+  slider.goTo('next')
+});
+
 
 // document.addEventListener('DOMContentLoaded', () => {
 

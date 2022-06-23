@@ -52,14 +52,7 @@
       transform: rotate(-45deg);
     }
   }
-  // .arrowNext {
-  //   box-sizing: content-box;
-  //   display: block;
-  //   position: absolute;
-  //   top: 35%;
-  //   right: 63px;
-  //   padding: 130px 10px;
-  // }
+
   &__slider {
     width: 100%;
     // max-width: 1442px;
@@ -73,15 +66,36 @@
     display: block;
     width: 206px;
     transition: all .2s linear;
-    &:hover {
-      transform: scale(105%);
-    }
+    // &:hover {
+    //   transform: scale(105%);
+    // }
     img {
       width: 100%;
       border-radius: 20px;
       &:hover {
-        box-shadow: 0px 4px 30px -12px #26FFF2;
+        box-shadow: 0px 4px 30px -10px #26FFF2;
       }
     }
+  }
+  
+  .arrowPrev,
+  .arrowNext {
+    display: block;
+    position: absolute;
+    top: 25%;
+    padding: 130px 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .arrowPrev {
+    left: -25px;
+    transform: rotate(180deg);
+  }
+  .arrowNext {
+    right: -25px;
+  }
+  .tns-outer {
+    overflow: hidden;
   }
 }
