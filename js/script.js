@@ -6,19 +6,25 @@ let slider = tns({
   gutter: 27,
   controls: false,
   mouseDrag: true,
-  // responsive: {
-  //   576: {
-  //     edgePadding: 20,
-  //     gutter: 20,
-  //     items: 3
-  //   },
-  //   768: {
-  //     gutter: 20
-  //   },
-  //   992: {
-  //     items: 6
-  //   }
-  // }
+  responsive: {
+    320: {
+      items: 2,
+      gutter: 16
+    },
+    576: {
+      gutter: 20,
+      items: 3
+    },
+    768: {
+      items: 4
+    },
+    992: {
+      items: 5
+    },
+    1200: {
+      gutter: 24
+    }    
+  }
 });
 
 document.querySelector('.arrowPrev').addEventListener('click', function () {
