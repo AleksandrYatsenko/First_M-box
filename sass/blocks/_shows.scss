@@ -79,31 +79,6 @@
     }
   }
 
-  .tns-ovh {
-    padding: 0 15px;
-  }
-  .arrowPrev,
-  .arrowNext {
-    display: block;
-    position: absolute;
-    
-    top: 57%;
-    padding: 100px 10px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    svg {
-      width: 20px;
-      height: 34px;
-    }
-  }
-  .arrowPrev {
-    left: 5px;
-    transform: translateY(-50%) rotate(180deg);
-  }
-  .arrowNext {
-    right: 5px;
-    transform: translateY(-50%);
-  }
+  
   
 }
