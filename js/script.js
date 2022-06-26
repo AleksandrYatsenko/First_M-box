@@ -27,33 +27,33 @@ let slider = tns({
   }
 });
 
-// let slider2 = tns({
-//   container: '.movies__slider',
-//   items: 6,
-//   nav: false,
-//   gutter: 27,
-//   controls: false,
-//   mouseDrag: true,
-//   responsive: {
-//     320: {
-//       items: 2,
-//       gutter: 16
-//     },
-//     576: {
-//       gutter: 20,
-//       items: 3
-//     },
-//     768: {
-//       items: 4
-//     },
-//     992: {
-//       items: 6
-//     },
-//     1200: {
-//       gutter: 24
-//     }    
-//   }
-// });
+let slider2 = tns({
+  container: '.movies__slider',
+  items: 6,
+  nav: false,
+  gutter: 27,
+  controls: false,
+  mouseDrag: true,
+  responsive: {
+    320: {
+      items: 2,
+      gutter: 16
+    },
+    576: {
+      gutter: 20,
+      items: 3
+    },
+    768: {
+      items: 4
+    },
+    992: {
+      items: 6
+    },
+    1200: {
+      gutter: 24
+    }    
+  }
+});
 
 document.querySelector('.showsPrev').addEventListener('click', function () {
   slider.goTo('prev')
@@ -63,10 +63,10 @@ document.querySelector('.showsNext').addEventListener('click', function () {
 });
 
 document.querySelector('.moviesPrev').addEventListener('click', function () {
-  slider.goTo('prev')
+  slider2.goTo('prev')
 });
 document.querySelector('.moviesNext').addEventListener('click', function () {
-  slider.goTo('next')
+  slider2.goTo('next')
 });
 
 
