@@ -78,4 +78,16 @@
   &__burger {
     display: none;
   }
+  .burger_active {
+    span:first-child {
+      transform: translateY(1px) rotate(-45deg);
+    }
+    span:nth-child(2) {
+      width: 0;
+    }
+    span:last-child {
+      margin-bottom: 0;
+      transform: translateY(-7px) rotate(45deg);
+    }
+  }
 }

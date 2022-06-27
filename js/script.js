@@ -69,29 +69,28 @@ document.querySelector('.moviesNext').addEventListener('click', function () {
   slider2.goTo('next')
 });
 
+// -------- burger-menu ----------
 
+const menuElem = document.querySelector('.header__nav');
+const burgerElem = document.querySelector('.header__burger');
+const menuItems = document.querySelectorAll('.header__link');
 
-// document.addEventListener('DOMContentLoaded', () => {
+burgerElem.addEventListener('click', () => {
+  menuElem.classList.toggle('header__nav_active');
+  burgerElem.classList.toggle('burger_active');
+});
 
-//   const sliderBox = document.querySelector('.shows__slider'),
-//         arrowNext = document.querySelector('.arrowNext'),
-//         links = sliderBox.querySelectorAll('.shows__link');
+// function closeMenu () {
+//   menuElem.classList.remove('header__nav_active');
+//   burgerElem.classList.remove('burger_active');
+// }
 
-//   arrowNext.addEventListener('click', () => {
-//     let index;
-//     links.forEach((item, i) => {
-//       if(item.classList.contains('shows__link_active')) {
-//         index = i;
-//         item.classList.remove('shows__link_active');
-//       } 
-//     });
-//     index++;
-//     if(index === links.length) {
-//       index = 0;
-//       links[index].classList.add('shows__link_active');
-//     } else {
-//       links[index].classList.add('shows__link_active');
-//     }
-    
-//   });
-// });
+menuItems.forEach(item => {
+  item.addEventListener('click', (e) => {
+    menuElem.classList.toggle('header__nav_active');
+    burgerElem.classList.toggle('burger_active');
+    // if(e.target.classList.contains('hero')) {
+    //   closeMenu();
+    // }
+  })
+})
