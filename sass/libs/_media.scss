@@ -21,9 +21,9 @@
     &__box {
       margin-bottom: 30px;
     }
-    &__list {
-      gap: 24px;
-    }
+    // &__list {
+    //   gap: 24px;
+    // }
   }
   .genres {
     padding-top: 60px;
@@ -129,9 +129,9 @@
     &__title {
       font-size: 22px;
     }
-    &__list {
-      gap: 20px;
-    }
+    // &__list {
+    //   gap: 20px;
+    // }
   }
   .genres {
     padding-top: 40px;
@@ -763,16 +763,16 @@
   .channels {
     padding-bottom: 30px;
   }
-  .channels,
+  // .channels,
+  // .actors {
+  //   // &__list {
+  //   //   gap: 15px;
+  //   // }
+  // }
   .actors {
-    &__list {
-      gap: 15px;
-    }
-  }
-  .actors {
-    &__list {
-      overflow-x: hidden;
-    }
+    // &__list {
+    //   overflow-x: hidden;
+    // }
     &__link {
       width: 86px;
     }

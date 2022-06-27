@@ -33,12 +33,12 @@
       transform: rotate(-45deg);
     }
   }
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 60px;
-  }
+  // &__list {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: flex-start;
+  //   gap: 60px;
+  // }
   &__link {
     display: flex;
     flex-direction: column;
@@ -49,7 +49,9 @@
     text-decoration: none;
     transition: all .2s linear;
     &:hover {
-      transform: scale(105%);
+      span {
+        transform: scale(105%);
+      }
     }
     img {
       display: block;
@@ -58,6 +60,7 @@
       border: none;
     }
     span {
+      display: block;
       margin-top: 20px;
       margin-bottom: 10px;
       font-size: 18px;
