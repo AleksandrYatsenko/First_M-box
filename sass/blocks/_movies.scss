@@ -44,12 +44,11 @@
   //   flex-wrap: nowrap;
   //   justify-content: space-between;
   //   align-items: center;
-  //   margin-bottom: 55px;
   //   gap: 40px;
   // }
   &__link {
     display: block;
-    max-width: 206px;
+    width: 206px;
     transition: all .2s linear;
     // &:hover {
     //   transform: scale(105%);
@@ -85,5 +84,12 @@
       background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
       box-shadow: 0px 6px 50px rgba(50, 108, 255, 0.6);
     }
+  }
+  .tns-ovh {
+    padding: 0 15px;
+  }
+  .arrowPrev,
+  .arrowNext {
+    top: 46%;
   }
 }
