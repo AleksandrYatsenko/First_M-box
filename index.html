@@ -46,7 +46,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="header__singIn">
             <img src="icons/login.svg" alt="log in">
           </a>
         </li>
@@ -443,18 +443,21 @@
     
   </footer>
 
-  <div class="overlay">
+  <div class="overlay hidden">
     <div class="modal">
       <div class="modal__close">&times;</div>
       <div class="modal__title">Sign In</div>
       <form action="#" class="modal__form">
-        <input type="text" name="name" placeholder="Your name">
+        <input type="text" class="modal__name hidden" name="name" placeholder="Your name">
         <input type="email" name="email" placeholder="Your E-mail">
         <input type="password" name="password" placeholder="Your pass">
-        <input type="password" name="confirmPass" placeholder="Repeat your password">
+        <input type="password" class="modal__confirmPass hidden" name="confirmPass" placeholder="Repeat your password">
         <button class="modal__btn">Enter</button>
       </form>
-      <div class="modal__reg"><span>New member?</span> <button class="modal__btn_register">Registration</button></div>
+      <div class="modal__reg">
+        <span>New member?</span> 
+        <button class="modal__btn_register">Registration</button>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>

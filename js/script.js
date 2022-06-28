@@ -124,8 +124,50 @@ menuItems.forEach(item => {
   item.addEventListener('click', (e) => {
     menuElem.classList.toggle('header__nav_active');
     burgerElem.classList.toggle('burger_active');
-    // if(e.target.classList.contains('hero')) {
-    //   closeMenu();
-    // }
   })
-})
+});
+
+// ----------- modal  ---------------
+
+const over = document.querySelector('.overlay'),
+      regBtn = document.querySelector('.register__btn'),
+      modClose = over.querySelector('.modal__close'),
+      modalBtnReg = over.querySelector('.modal__btn_register'),
+      bodyOverflow = document.querySelector('body'),
+      headerSingIn = document.querySelector('.header__singIn');
+
+  const openModal = () => {
+    over.classList.remove('hidden');
+    bodyOverflow.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    over.classList.add('hidden');
+    bodyOverflow.style.overflow = '';
+    if (!document.querySelector('.modal__name').classList.contains('hidden')) {
+      document.querySelector('.modal__reg').style.display = '';
+      document.querySelector('.modal__name').classList.toggle('hidden');
+      document.querySelector('.modal__confirmPass').classList.toggle('hidden');
+    }
+  };
+
+  headerSingIn.addEventListener('click', openModal);
+  regBtn.addEventListener('click', openModal);
+
+  over.addEventListener('click', (e) => {
+    const targ = e.target;
+    if(targ.classList.contains('overlay') || targ.classList.contains('modal__close')) {
+      closeModal();
+    }
+  });
+
+  modalBtnReg.addEventListener('click', () => {
+    document.querySelector('.modal__reg').style.display = 'none';
+    document.querySelector('.modal__name').classList.toggle('hidden');
+    document.querySelector('.modal__confirmPass').classList.toggle('hidden');
+  });
+
+  document.querySelector('.modal__btn').addEventListener('click', (e) => {
+    e.preventDefault();
+  });
+
