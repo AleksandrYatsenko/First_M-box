@@ -130,24 +130,26 @@ menuItems.forEach(item => {
 // ----------- modal  ---------------
 
 const over = document.querySelector('.overlay'),
-      regBtn = document.querySelector('.register__btn'),
       modClose = over.querySelector('.modal__close'),
-      modalBtnReg = over.querySelector('.modal__btn_register'),
+      modName = over.querySelector('.modal__name'),
+      modBtnReg = over.querySelector('.modal__btn_register'),
+      modConfirmPass = over.querySelector('.modal__confirmPass'),
+      regBtn = document.querySelector('.register__btn'),
       bodyOverflow = document.querySelector('body'),
       headerSingIn = document.querySelector('.header__singIn');
 
   const openModal = () => {
     over.classList.remove('hidden');
-    bodyOverflow.style.overflow = 'hidden';
+    // bodyOverflow.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     over.classList.add('hidden');
-    bodyOverflow.style.overflow = '';
-    if (!document.querySelector('.modal__name').classList.contains('hidden')) {
+    // bodyOverflow.style.overflow = '';
+    if (!modName.classList.contains('hidden')) {
       document.querySelector('.modal__reg').style.display = '';
-      document.querySelector('.modal__name').classList.toggle('hidden');
-      document.querySelector('.modal__confirmPass').classList.toggle('hidden');
+      modName.classList.toggle('hidden');
+      modConfirmPass.classList.toggle('hidden');
     }
   };
 
@@ -161,12 +163,14 @@ const over = document.querySelector('.overlay'),
     }
   });
 
-  modalBtnReg.addEventListener('click', () => {
+  // btn "register" on modal
+  modBtnReg.addEventListener('click', () => {
     document.querySelector('.modal__reg').style.display = 'none';
-    document.querySelector('.modal__name').classList.toggle('hidden');
-    document.querySelector('.modal__confirmPass').classList.toggle('hidden');
+    modName.classList.toggle('hidden');
+    modConfirmPass.classList.toggle('hidden');
   });
 
+  // btn "Enter"
   document.querySelector('.modal__btn').addEventListener('click', (e) => {
     e.preventDefault();
   });
