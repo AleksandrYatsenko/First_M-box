@@ -113,19 +113,12 @@ const menuItems = document.querySelectorAll('.header__link');
 burgerElem.addEventListener('click', () => {
   menuElem.classList.toggle('header__nav_active');
   burgerElem.classList.toggle('burger_active');
-  bodyOverflow.style.overflow = 'hidden';
 });
-
-// function closeMenu () {
-//   menuElem.classList.remove('header__nav_active');
-//   burgerElem.classList.remove('burger_active');
-// }
 
 menuItems.forEach(item => {
   item.addEventListener('click', () => {
     menuElem.classList.toggle('header__nav_active');
     burgerElem.classList.toggle('burger_active');
-    bodyOverflow.style.overflow = '';
   })
 });
 
