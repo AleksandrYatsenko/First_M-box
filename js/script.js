@@ -113,6 +113,7 @@ const menuItems = document.querySelectorAll('.header__link');
 burgerElem.addEventListener('click', () => {
   menuElem.classList.toggle('header__nav_active');
   burgerElem.classList.toggle('burger_active');
+  bodyOverflow.style.overflow = 'hidden';
 });
 
 // function closeMenu () {
@@ -121,9 +122,10 @@ burgerElem.addEventListener('click', () => {
 // }
 
 menuItems.forEach(item => {
-  item.addEventListener('click', (e) => {
+  item.addEventListener('click', () => {
     menuElem.classList.toggle('header__nav_active');
     burgerElem.classList.toggle('burger_active');
+    bodyOverflow.style.overflow = '';
   })
 });
 
@@ -140,12 +142,12 @@ const over = document.querySelector('.overlay'),
 
   const openModal = () => {
     over.classList.remove('hidden');
-    // bodyOverflow.style.overflow = 'hidden';
+    bodyOverflow.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     over.classList.add('hidden');
-    // bodyOverflow.style.overflow = '';
+    bodyOverflow.style.overflow = '';
     if (!modName.classList.contains('hidden')) {
       document.querySelector('.modal__reg').style.display = '';
       modName.classList.toggle('hidden');
@@ -163,15 +165,28 @@ const over = document.querySelector('.overlay'),
     }
   });
 
-  // btn "register" on modal
+  // ----------- btn "register" on modal ----------
   modBtnReg.addEventListener('click', () => {
     document.querySelector('.modal__reg').style.display = 'none';
     modName.classList.toggle('hidden');
     modConfirmPass.classList.toggle('hidden');
   });
 
-  // btn "Enter"
+  // ---------- btn "Enter" ---------
   document.querySelector('.modal__btn').addEventListener('click', (e) => {
     e.preventDefault();
   });
+
+//  ----------- Up -------------
+const elemUp = document.querySelector('.up');
+window.addEventListener('scroll', () => {
+  if(window.scrollY >= 1300) {
+    elemUp.classList.remove('hidden');
+    console.log(window.scrollY);
+  } else if (window.scrollY <= 1300) {
+    elemUp.classList.add('hidden');
+  }
+});
+
+  
 
