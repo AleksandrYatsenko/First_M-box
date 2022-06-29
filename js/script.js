@@ -132,16 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
   
   burgerElem.addEventListener('click', () => {
     openMenu();
-    // menuElem.classList.toggle('header__nav_active');
-    // burgerElem.classList.toggle('burger_active');
-    // undlayForNav.style.display = 'block';
   });
   
   menuItems.forEach(item => {
     item.addEventListener('click', () => {
-      menuElem.classList.toggle('header__nav_active');
-      burgerElem.classList.toggle('burger_active');
-      undlayForNav.style.display = 'none';
+      closeMenu();
     });
   });
   
