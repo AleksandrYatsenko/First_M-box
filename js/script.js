@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
   let slider = tns({
     container: '.shows__slider',
     items: 6,
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
       elemUp.classList.add('hidden');
     }
   });
-});
+
 
 
   
