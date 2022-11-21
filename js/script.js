@@ -136,11 +136,8 @@
       closeMenu();
     }
   });
+
   
-<<<<<<< HEAD
-  
-=======
->>>>>>> f537b107aac559f31f610f7b38b4b2aede983090
   // ----------- modal  ---------------
   
   const over = document.querySelector('.overlay'),
