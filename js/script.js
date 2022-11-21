@@ -111,34 +111,32 @@
         menuItems = document.querySelectorAll('.header__link'),
         undlayForNav = document.querySelector('.underlayerForNav');
   
-  const openMenu = () => {
-    menuElem.classList.add('header__nav_active');
-    burgerElem.classList.add('burger_active');
-    undlayForNav.style.display = 'block';
+  const toggleMenu = () => {
+    menuElem.classList.toggle('header__nav_active');
+    burgerElem.classList.toggle('burger_active');
+    undlayForNav.classList.toggle('hidden');
+    document.body.classList.toggle('lock');
   }
   
   const closeMenu = () => {
     menuElem.classList.remove('header__nav_active');
     burgerElem.classList.remove('burger_active');
-    undlayForNav.style.display = 'none';
+    undlayForNav.classList.add('hidden');
+    document.body.classList.remove('lock');
   }
+
+  burgerElem.addEventListener('click', toggleMenu);
+
+  menuItems.forEach(item => {
+    item.addEventListener('click', closeMenu);
+  });
   
   document.addEventListener('click', (e) => {
-    const targ = e.target;
-    if(targ.classList.contains('burger_active') || targ.classList.contains('underlayerForNav')) {
+    if(e.target.classList.contains('underlayerForNav')) {
       closeMenu();
     }
   });
   
-  burgerElem.addEventListener('click', () => {
-    openMenu();
-  });
-  
-  menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-      closeMenu();
-    });
-  });
   
   // ----------- modal  ---------------
   
